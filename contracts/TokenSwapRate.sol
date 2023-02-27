@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 /// @author Musa AbdulKareem (@WiseMrMusa)
 /// @notice This gets the exchange rate of two Tokens
 
-contract PriceConverter is Ownable {
+contract TokenSwapRate is Ownable {
 
     /// @dev This maps the token address to the aggregator's address
     mapping (string => address) private aggregrator;

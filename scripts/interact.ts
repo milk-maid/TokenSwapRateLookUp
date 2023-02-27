@@ -2,7 +2,7 @@ import { ethers } from "hardhat";
 
 async function main() {
   const [owner] = await ethers.getSigners();
-  const GetSwapContract = await ethers.getContractAt("ITokenSwap","0xd65Da948b6E4719Ca6f41AB8836500e565e5C01D");
+  const GetSwapContract = await ethers.getContractAt("ITokenSwap","0x90F6C94d31FBEcC7bb6eC5403537eb5584D16c73");
 
   await GetSwapContract.addAggregator("BTC","0xA39434A63A52E749F02807ae27335515BA4b07F7");
   await GetSwapContract.addAggregator("CZK","0xAE45DCb3eB59E27f05C170752B218C6174394Df8");
@@ -14,7 +14,7 @@ async function main() {
   await GetSwapContract.addAggregator("JPY","0x982B232303af1EFfB49939b81AD6866B2E4eeD0B");
   await GetSwapContract.addAggregator("LINK","0x48731cF7e84dc94C5f84577882c14Be11a5B7456");
 
-  await console.log("ALL DONE");
+  await console.log("Working It Out");
   
 //   console.log(await GetSwapContract.getSwapTokenPrice("BTC","ETH",18,2));
 
