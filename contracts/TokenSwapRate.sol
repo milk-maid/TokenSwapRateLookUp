@@ -6,7 +6,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 
 /// @title Price Feed
-/// @author Musa AbdulKareem (@WiseMrMusa)
 /// @notice This gets the exchange rate of two Tokens
 
 contract TokenSwapRate is Ownable {
